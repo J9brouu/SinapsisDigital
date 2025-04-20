@@ -1,0 +1,77 @@
+body, html {
+    background-color: #B3B3B3;
+    overflow-x: hidden;
+}
+.fondo {
+    background-color: #9c9c9c;
+}
+.contenedortitulo {
+    text-align: center;
+}
+.margen {
+    margin-left: 700px;
+}
+.parrafo {
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+.cover {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/fondo.jpg); 
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cover h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.cover p {
+    font-size: 1.5rem;
+}
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #1f1f1f;
+}
+
+footer.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.card.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-color: #333333;
+}
+
+.fondo.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.btn-outline-light.dark-mode {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode span,
+body.dark-mode li {
+    color: #ffffff !important;
+}
