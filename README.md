@@ -1,2 +1,2 @@
-# SinapsisDigital
-Evaluacion n1 de frontend y backend
+# Sinapsis_Digital
+Pagina creada para un trabajo 

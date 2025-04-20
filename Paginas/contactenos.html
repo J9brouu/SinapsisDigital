@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/funciones.js" defer></script>
+    <title>Contáctenos</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/Logo.png" alt="Logo" class="img-fluid" style="max-width: 50px; height: auto;">
+                <span class="ms-2">Sinapsis Digital</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nuestrosservicios.html">Nuestros Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+                </ul>
+                <button id="themeToggle" class="btn btn-outline-light ms-3">Modo Oscuro</button>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center mt-5" data-aos="fade-up">Contáctenos</h1>
+    <div class="container mt-5" data-aos="fade-up">
+        <p class="text-center">Estamos aquí para ayudarte. Completa el formulario a continuación y nos pondremos en
+            contacto contigo lo antes posible.</p>
+        <form action="formulario.php" name="" method="POST" >
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="service" class="form-label">Servicios</label>
+                <select class="form-select" id="service" name="service">
+                    <option value="" disabled selected>Seleccione un servicio</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="4" maxlength="1000"></textarea>
+                <small id="charCount" class="form-text text-muted">0/1000 caracteres</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <div class="fondo container mt-5" data-aos="fade-up">
+        <h2 class="text-center mb-4">Información de Contacto</h2>
+        <p class="text-center fs-5">
+            ¿Prefieres contactarnos directamente? Aquí tienes nuestra información para que puedas comunicarte con
+            nosotros de manera rápida y sencilla.
+        </p>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="../images/Logo completo.png" alt="Logo" class="img-fluid" width="600" height="600">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <p><strong>Dirección:</strong> Av. Providencia 1234, Oficina 601, Providencia, Santiago, Chile</p>
+                <div class="ratio ratio-16x9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6927071911687!2d-70.61624790173698!3d-33.4312549854164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf62a2cb75c3%3A0xeefbd125aba56501!2sAv.%20Providencia%201234%2C%20Oficina%20601%2C%207500571%20Providencia%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1745111415970!5m2!1ses-419!2scl" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Teléfono:</strong> +56 2 1234 5678</p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Correo:</strong> <a href="mailto:contacto@sinapsisdigital.com">info@sinapsisdigital.cl</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2025 Sinapsis Digital. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Verificar si el formulario se envió correctamente
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('status') === 'success') {
+            Swal.fire({
+                icon: 'success',
+                title: '¡Formulario enviado!',
+                text: 'Tu información ha sido enviada correctamente.',
+                confirmButtonText: 'Aceptar'
+            }).then(() => {
+                // Eliminar el parámetro de la URL después de mostrar el mensaje
+                window.history.replaceState(null, null, window.location.pathname);
+            });
+        }
+    </script>
+    <script>
+        // URL de la API (reemplaza con la URL real de tu API)
+        const apiUrl = 'https://67feed7158f18d7209ef9674.mockapi.io/Servicios';
+
+        // Función para cargar los servicios desde la API
+        async function cargarServicios() {
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error('Error al obtener los servicios');
+                }
+                const servicios = await response.json();
+
+                // Obtener el elemento <select>
+                const selectElement = document.getElementById('service');
+
+                // Agregar las opciones al <select>
+                servicios.forEach(servicio => {
+                    const option = document.createElement('option');
+                    option.value = servicio.nombre; // Usa el Nombre del servicio como valor
+                    option.textContent = servicio.nombre; // Usa el nombre del servicio como texto
+                    selectElement.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error al cargar los servicios:', error);
+            }
+        }
+
+        // Llamar a la función para cargar los servicios al cargar la página
+        document.addEventListener('DOMContentLoaded', cargarServicios);
+    </script>
+</body>
+
+</html>
+
+</html>
+``` 
