@@ -1,0 +1,7 @@
+CREATE TABLE `formulario`(
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `nombre` VARCHAR(255) NOT NULL,
+    `correo` VARCHAR(255) NOT NULL,
+    `mensaje` TEXT NOT NULL,
+    `servicios` VARCHAR(255) NOT NULL
+);
